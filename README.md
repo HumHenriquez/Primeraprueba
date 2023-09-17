@@ -1,2 +1,0 @@
-# Primeraprueba
-Primera prueba ionic
