@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>rickanmorty</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">rickanmorty</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item *ngFor="let personaje of datos">
+        <ion-label>
+          Nombre: {{ personaje.name }}
+        </ion-label>
+        <ion-label>
+          Estado: {{ personaje.status }}
+        </ion-label>
+        <ion-label>
+          Especie: {{ personaje.species }}
+        </ion-label>
+        <!-- Puedes agregar más etiquetas ion-label según las propiedades que desees mostrar -->
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-content>
