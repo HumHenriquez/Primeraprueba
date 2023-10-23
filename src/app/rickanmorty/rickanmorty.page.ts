@@ -17,9 +17,10 @@ export class RickanmortyPage implements OnInit {
     this.rickanmortyService.obtenerDatos().subscribe(data => {
       if (data) {
         this.datos = data;
-        console.log(data)
+        this.results = this.datos.results;
+
       }
     });
-  
+
 }
 }

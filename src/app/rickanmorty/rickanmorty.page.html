@@ -12,7 +12,7 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item *ngFor="let personaje of datos">
+      <ion-item *ngFor="let personaje of results">
         <ion-label>
           Nombre: {{ personaje.name }}
         </ion-label>
@@ -22,7 +22,6 @@
         <ion-label>
           Especie: {{ personaje.species }}
         </ion-label>
-        <!-- Puedes agregar más etiquetas ion-label según las propiedades que desees mostrar -->
       </ion-item>
     </ion-list>
   </ion-content>
