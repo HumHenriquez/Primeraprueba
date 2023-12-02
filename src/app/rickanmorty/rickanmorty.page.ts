@@ -10,6 +10,7 @@ export class RickanmortyPage implements OnInit {
   data:any;
   datos:any;
   results:any;
+  datoscaja: any[] | null = [];
 
   constructor(private rickanmortyService:RickanmortyService) { }
 
@@ -18,9 +19,9 @@ export class RickanmortyPage implements OnInit {
       if (data) {
         this.datos = data;
         this.results = this.datos.results;
-
       }
     });
+}
 
-}
-}
+
+};

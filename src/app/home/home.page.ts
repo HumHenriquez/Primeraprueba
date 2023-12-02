@@ -10,6 +10,7 @@ import { RickanmortyService } from '../rickanmorty/rickanmorty.service';
 })
 
 export class HomePage {
+  datoCaja: any[] | null = [];
   nombreUsuario!:string;
   datos:any;
 
@@ -25,5 +26,12 @@ export class HomePage {
     this.authService.logout();
 
   }
+
+  obtenerCaja(){
+    this.datoCaja = this.rickanmortyService.obtenerDatosCajita();
+  } 
+
+
+
 
 }
